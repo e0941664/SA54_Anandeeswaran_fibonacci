@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 11
+Class-Path: dropwizard-core-4.0.0-beta.1.jar dropwizard-util-4.0.0-beta.
+ 1.jar dropwizard-jackson-4.0.0-beta.1.jar guava-31.1-jre.jar failureacc
+ ess-1.0.1.jar listenablefuture-9999.0-empty-to-avoid-conflict-with-guav
+ a.jar checker-qual-3.21.4.jar error_prone_annotations-2.12.1.jar j2objc
+ -annotations-1.3.jar caffeine-3.0.6.jar jackson-datatype-guava-2.13.2.j
+ ar jackson-datatype-jsr310-2.13.2.jar jackson-datatype-jdk8-2.13.2.jar 
+ jackson-module-parameter-names-2.13.2.jar jackson-module-blackbird-2.13
+ .2.jar dropwizard-validation-4.0.0-beta.1.jar jakarta.el-4.0.2.jar jaka
+ rta.el-api-4.0.0.jar dropwizard-configuration-4.0.0-beta.1.jar jackson-
+ dataformat-yaml-2.13.2.jar snakeyaml-1.30.jar commons-text-1.9.jar comm
+ ons-lang3-3.11.jar dropwizard-logging-4.0.0-beta.1.jar metrics-logback-
+ 4.2.9.jar jul-to-slf4j-2.0.0-alpha7.jar logback-core-1.3.0-alpha14.jar 
+ logback-throttling-appender-1.1.9.jar log4j-over-slf4j-2.0.0-alpha7.jar
+  jcl-over-slf4j-2.0.0-alpha7.jar dropwizard-metrics-4.0.0-beta.1.jar dr
+ opwizard-jersey-4.0.0-beta.1.jar jersey-server-3.0.4.jar jersey-metainf
+ -services-3.0.4.jar jersey-hk2-3.0.4.jar hk2-locator-3.0.2.jar javassis
+ t-3.28.0-GA.jar metrics-jersey3-4.2.9.jar jackson-jakarta-rs-json-provi
+ der-2.13.2.jar jackson-jakarta-rs-base-2.13.2.jar jackson-module-jakart
+ a-xmlbind-annotations-2.13.2.jar jakarta.xml.bind-api-3.0.1.jar jakarta
+ .activation-2.0.1.jar jakarta.annotation-api-2.1.0.jar hk2-api-3.0.2.ja
+ r hk2-utils-3.0.2.jar aopalliance-repackaged-3.0.2.jar jersey-container
+ -servlet-3.0.4.jar jersey-container-servlet-core-3.0.4.jar jersey-clien
+ t-3.0.4.jar jetty-io-11.0.9.jar dropwizard-servlets-4.0.0-beta.1.jar me
+ trics-annotation-4.2.9.jar dropwizard-jetty-4.0.0-beta.1.jar jetty-serv
+ lets-11.0.9.jar jetty-http-11.0.9.jar dropwizard-lifecycle-4.0.0-beta.1
+ .jar dropwizard-health-4.0.0-beta.1.jar metrics-core-4.2.9.jar metrics-
+ jetty11-4.2.9.jar metrics-jvm-4.2.9.jar metrics-jmx-4.2.9.jar metrics-j
+ akarta-servlets-4.2.9.jar metrics-json-4.2.9.jar profiler-1.1.1.jar met
+ rics-healthchecks-4.2.9.jar dropwizard-request-logging-4.0.0-beta.1.jar
+  logback-access-1.3.0-alpha14.jar logback-classic-1.3.0-alpha14.jar jsr
+ 305-3.0.2.jar jakarta.servlet-api-5.0.0.jar jakarta.ws.rs-api-3.0.0.jar
+  argparse4j-0.9.0.jar jetty-security-11.0.9.jar jetty-server-11.0.9.jar
+  jetty-servlet-11.0.9.jar jetty-util-11.0.9.jar jetty-setuid-java-1.0.4
+ .jar jakarta.inject-api-2.0.1.jar jersey-common-3.0.4.jar osgi-resource
+ -locator-1.0.3.jar jersey-bean-validation-3.0.4.jar slf4j-api-2.0.0-alp
+ ha7.jar jackson-databind-2.13.2.2.jar jackson-core-2.13.2.jar jackson-a
+ nnotations-2.13.2.jar jakarta.validation-api-3.0.1.jar hibernate-valida
+ tor-7.0.4.Final.jar jboss-logging-3.4.1.Final.jar classmate-1.5.1.jar j
+ ettison-1.5.0.jar
+Main-Class: sg.oracle.internship.fibonacciProject.fibonacciProjectApplic
+ ation
+Created-By: Maven Integration for Eclipse
+
