@@ -38,61 +38,104 @@ class FibonacciComponent extends Component {
   render() {
     const { fibonacci, sorted, isSubmitted } = this.state;
     const fibList = fibonacci.map((number, i) => {
-      if (i !== fibonacci.length - 1) {
-        return <div key={i}>{number}, </div>;
-      } else {
-        return <div key={i}>{number}</div>;
-      }
+      return (
+        <div
+          key={i}
+          className=" rounded-10 mb-7 block-example border border-green"
+          style={{ textAlign: "center" }}
+        >
+          {number}{" "}
+        </div>
+      );
     });
 
     const sortedList = sorted.map((number, i) => {
-      if (i !== sorted.length - 1) {
-        return <div key={i}>{number}, </div>;
-      } else {
-        return <div key={i}>{number}</div>;
-      }
+      return (
+        <div
+          key={i}
+          className="rounded-10 mb-7 block-example border border-green"
+          style={{ textAlign: "center" }}
+        >
+          {number}{" "}
+        </div>
+      );
     });
 
     return (
       <div>
-        <Container className="mt-5">
+        <Container className="p-3 mb-7 mt-3 bg-info text-dark">
           <form onSubmit={this.onfibanacciSubmitHandler}>
-            <div className="float-end">
-              <div className="float-end">
-                <h4>Enter limit to get the fibonacci sequence: </h4>
+            <div>
+              <div
+                style={{
+                  paddingTop: "50px",
+                  paddingBottom: "50px",
+                  textAlign: "left",
+                }}
+              >
+                <h4>ENTER LIMIT TO GET FIBONACCI SEQUENCE </h4>
               </div>
-              <input
-                type="number"
-                min="1"
-                max="100"
-                step="1"
-                value={this.state.number}
-                onChange={this.onNumberChangeHandler}
-              />
-              <div className="float-end">
-                <Button color="primary" type="submit">
-                  Print Fibonacci
-                </Button>
+              <div className="row">
+                <div
+                  className="form-outline col-md-3 col-md-offset-2"
+                  style={{ display: "inline-block" }}
+                >
+                  <input
+                    className="form-control"
+                    id="typeNumber"
+                    type="number"
+                    min="1"
+                    max="100"
+                    step="1"
+                    value={this.state.number}
+                    onChange={this.onNumberChangeHandler}
+                  />
+                </div>
+                <div
+                  className="form-outline col-md-2 col-md-offset-3"
+                  style={{ display: "inline-block" }}
+                >
+                  <Button color="success" type="submit">
+                    Print Fibonacci
+                  </Button>
+                </div>
               </div>
             </div>
           </form>
-          <br />
-          <br />
-          <div style={{ display: "inline-block" }}>
-            <div
-              style={{
-                display: "inline-block",
-                paddingRight: "300px",
-                paddingLeft: "100px",
-              }}
-            >
-              Fibonacci List: [{fibList}]
-            </div>
-            <div style={{ display: "inline-block" }}>
-              Sorted List: [{sortedList}]
-            </div>
-          </div>
         </Container>
+        <br />
+        <br />
+        <div>
+          <Container>
+            <div style={{ display: "inline-block", fontWeight: "bold" }}>
+              <div
+                style={{
+                  paddingRight: "300px",
+                  paddingLeft: "100px",
+                  paddingBottom: "10px",
+                  fontSize: "1.7rem",
+                }}
+              >
+                FIBONACCI LIST
+              </div>
+              <div
+                style={{
+                  paddingRight: "300px",
+                  paddingLeft: "100px",
+                  paddingBottom: "20px",
+                }}
+              >
+                {fibList}
+              </div>
+            </div>
+            <div style={{ display: "inline-block", fontWeight: "bold" }}>
+              <div style={{ paddingBottom: "10px", fontSize: "1.7rem" }}>
+                SORTED LIST
+              </div>
+              <div style={{ paddingBottom: "20px" }}>{sortedList}</div>
+            </div>
+          </Container>
+        </div>
       </div>
     );
   }

@@ -1,16 +1,16 @@
 FROM node:13.12.0-alpine
 
-WORKDIR /front-end
+WORKDIR /
 
-ENV PATH /frontend/node_modules/.bin:$PATH
+ENV PATH node_modules/.bin:$PATH
 
-COPY frontend/package.json .
-COPY frontend/package-lock.json .
+COPY package.json .
+COPY package-lock.json .
 RUN npm install --silent
 
 RUN npm install react-scripts -g --silent
 RUN npm install bootstrap react-bootstrap --save
 
-COPY front-end/ .
+COPY . .
 
 CMD ["npm", "start"]
