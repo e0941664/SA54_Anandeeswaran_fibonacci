@@ -24,18 +24,23 @@ public class fibonacciRestController {
 	public Response findFibanacci(@PathParam("elements") Integer elements) throws URISyntaxException {
 		Response response = null;
 		try {
-			System.out.println(elements);
+			
+			//Creating Instance of the service class
 			fibonacciCalculatorService fibonacciservice = new fibonacciCalculatorServiceImpl();
 
+			//Calling method from serviceclass to getthe fibonacci list
 			BigInteger[] fibonacci = fibonacciservice.fibonacciSequence(elements);
+			
+			//Passing the fibonacci list and getting the sorted sequence
 			BigInteger[] sorted = fibonacciservice.sortfibonacciSequence(fibonacci);
 
+			//Using a helper class to wrap the results
 			fibonaccihelper fibhelper = new fibonaccihelper();
 			fibhelper.setFibonacci(fibonacci);
 			fibhelper.setSorted(sorted);
 
+			//Sending response back to calling service along with wrapped class with result.
 			response = Response.status(Response.Status.OK).entity(fibhelper).build();
-			System.out.println(response);
 			return response;
 		} catch (Exception e) {
 			return Response.status(Status.NOT_FOUND).build();
