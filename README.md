@@ -9,7 +9,7 @@ How to start the fibonacciProject application
 How to start the React part application
 ---
 1. The path has a folder front-end which has the react part of the code.
-2. Open the folder path from visual studio code and on terminal, enter command npm start to rent the react part or using command promt navigae to the folder path and run npm start. (Note for the communication to happen between react and java, run the javaapplication running.)
+2. Open the folder path from visual studio code and on terminal, enter command npm start to rent the react part or using terminal or command prompt navigate to the folder path and run "npm start". (Note: 1) Dont forget to use "npm install" when running the react app for first time  2) For the communication to happen between react and java, keep the java application running.)
 3. To check that your application is running enter url `http://localhost:3000`
 
 How to build and run the docker container
