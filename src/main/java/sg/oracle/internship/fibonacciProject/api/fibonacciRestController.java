@@ -28,7 +28,7 @@ public class fibonacciRestController {
 			//Creating Instance of the service class
 			fibonacciCalculatorService fibonacciservice = new fibonacciCalculatorServiceImpl();
 
-			//Calling method from serviceclass to getthe fibonacci list
+			//Calling method from service class to get the fibonacci list
 			BigInteger[] fibonacci = fibonacciservice.fibonacciSequence(elements);
 			
 			//Passing the fibonacci list and getting the sorted sequence
