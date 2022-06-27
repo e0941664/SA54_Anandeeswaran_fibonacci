@@ -12,5 +12,5 @@ RUN npm install react-scripts -g --silent
 RUN npm install bootstrap react-bootstrap --save
 
 COPY . .
-
+EXPOSE 3000
 CMD ["npm", "start"]
